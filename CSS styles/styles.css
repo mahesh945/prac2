@@ -1,0 +1,22 @@
+
+
+hr{
+    background-color: red;
+    border-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heading{
+    border: 5px;
+}
+div{
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+.top-left{
+    border: 10px;
+    padding: 20px;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
