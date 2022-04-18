@@ -17,3 +17,26 @@
 .carousel-item{
     padding: 3% 15%;
 }
+
+#features{
+    position: relative;
+    /* z-index: 1; - not necessary*/
+}
+
+.title-image{
+    position: absolute;
+    right: 30%;
+}
+
+@media (max-width:1028px){
+    
+    #title{
+        text-align: center;
+    }
+    
+    .title-image{
+    position: static;
+    transform: rotate(0);
+}
+
+}
