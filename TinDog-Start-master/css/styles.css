@@ -40,3 +40,11 @@
 }
 
 }
+
+h1,h2{
+    color: green;
+}
+
+.carousel-inner.carousel-item{
+    font-size: medium;
+}
