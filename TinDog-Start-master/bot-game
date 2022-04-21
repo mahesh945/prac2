@@ -1,0 +1,16 @@
+function getMilk(bottles, cost){
+    alert("moveRight");
+    alert("moveRight");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moveRight");
+    alert("moveRight");
+    alert("Buy" + bottles + "bottles of milk");
+    alert("It costs" + bottles*cost + "to buy" + bottles + "bottles of milk");
+    alert("moveLeft");
+    alert("moveLeft");
+    
+}
+
+getMilk(3, 13);

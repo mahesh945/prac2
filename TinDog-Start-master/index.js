@@ -1,7 +1,6 @@
 
 var a=4,b=6;
-a=a+b;
-b=a-b;
-a=a-b;
+var noname="ghana";
+noname.slice(1,3);
 
 
