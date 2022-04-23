@@ -12,6 +12,6 @@ function isLeap(){
 }
 
 studName = {Sara, Akash, Josy, Harry, Maya};
-for (let index = 0; index < studName.length; index++) {
+for (var index = 0; index < studName.length; index++) {
     print(StudName);    
 }
