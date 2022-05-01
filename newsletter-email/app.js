@@ -1,3 +1,13 @@
 const express = require("express");
-const https = require("https");
+const bpdyParser = require("body-parser");
+const request = require("request");
+
 const app = express();
+
+app.get("/", function(req, res){
+    res.sendFile(__dirname + "/sign-up.html");
+});
+
+app.listen(3000, function() {
+   console.log("hi"); 
+});
