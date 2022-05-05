@@ -5,3 +5,8 @@
 </p>
 
 <%- include('partials/footer'); %>
+
+<% for.Each(function(post){%>
+    <h1><%= post.title %></h1>
+    <p><%= post.content.substring(0, 100) + "..." %></p>
+<% }) %>
