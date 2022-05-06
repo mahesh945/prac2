@@ -28,4 +28,9 @@ app.post("/", function(req, res){
 
 app.listen(3000, function() {
    console.log("hi"); 
-});
+   if(currentDay===6 || today.getDay===0){
+      res.render("list", {kindOfDay: weekend}
+   else {
+      var item = req.body.newItem;
+      res.redirect("/");
+   }
