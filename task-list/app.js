@@ -52,8 +52,9 @@ listTitle.findOneAndUpdate(
 
 app.get("/", function(req, res){
 
-   Item.find({}, funcrion(err, foundItems){
-      res.render("list", {listTitle : "Today", newListItems : foundItems});
+Item.find({}, function(err, foundItems){
+res.render("list", 
+{listTitle : "Today", newListItems : foundItems});
    });
 });
   
@@ -67,7 +68,7 @@ app.get("/", function(req, res){
    //      res.send("need to work");
 
 
-});
+// });
 
 app.post("/", function(req, res){
     var item = req.body.newItem;
