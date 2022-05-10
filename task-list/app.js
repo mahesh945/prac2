@@ -39,9 +39,24 @@ Item.insertMany(defaultItem, function(err){
   }
 });
 
+listTitle.findOneAndUpdate(
+   {name : listName}, 
+   {$pull : {items : {_id : checkedItemId}}}, 
+   function(err, foundList){
+         if(!err){
+            res.redirect("/" + listName);
+         }
+   });
+
+
+
 app.get("/", function(req, res){
 
-   res.render("list", {listTitle : "Today", newListItems : items});
+   Item.find({}, funcrion(err, foundItems){
+      res.render("list", {listTitle : "Today", newListItems : foundItems});
+   });
+});
+  
    // var today = new Date;
    // var currentDay = today.getDay;
 
@@ -58,6 +73,8 @@ app.post("/", function(req, res){
     var item = req.body.newItem;
     res.redirect("/");
 });
+
+
 
 app.listen(3000, function() {
    console.log("hi"); 
