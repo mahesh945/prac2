@@ -8,6 +8,7 @@ const app = express();
 app.set("view engine","ejs");
 
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser : true});
 
@@ -58,17 +59,17 @@ res.render("list",
    });
 });
   
-   // var today = new Date;
-   // var currentDay = today.getDay;
+   var today = new Date;
+   var currentDay = today.getDay;
 
-   //  if(currentDay===6 || today.getDay===0){
-   //     res.render("list", {kindOfDay: weekend});
-   //  }
-   //  else
-   //      res.send("need to work");
+    if(currentDay===6 || today.getDay===0){
+       res.render("list", {kindOfDay: weekend});
+    }
+    else
+        res.send("need to work");
 
 
-// });
+
 
 app.post("/", function(req, res){
     var item = req.body.newItem;
