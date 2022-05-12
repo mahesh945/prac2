@@ -18,8 +18,27 @@ const articleSchema = {
  
 const Article = mongoose.model("Article", articleSchema);
 
+app.get("/articles", function(req, res){
+    Article.find(err, foundArticles)
+})
 
+newArticle.save();
+
+.put(functin(req,res){
+    Article.update(
+        {title : req.params.articleTitle},
+        {title : req.body.title, content : req.body.content},
+        {overwrite : true},
+        function(err){
+            if(!err){
+                res.send("successfully updated article");
+            }
+        }
+    );
+});
 
 app.listen(3000, function() {
     console.log("hi"); 
  });
+
+ app.route('/articles', )
