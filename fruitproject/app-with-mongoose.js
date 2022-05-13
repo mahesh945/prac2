@@ -29,6 +29,14 @@ const pineapple = new Fruit({
 
 pineapple.save();
 
+const jackfruit = new Fruit({
+    name : "Jackfruit",
+    rating : 9,
+    review : "Juicy"
+});
+
+jackfruit.save();
+
 const person = new Person({
     name : "Mahesh",
     age : 22,
