@@ -1,27 +1,31 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import Heading from "./Heading";
 
 const date = new Date();
 const currentTime = date.getHours();
 let greeting;
 
 const customStyle = {
-    color : 
+    color : green
 }
 
 if(currentTime < 12){
-    greeting = "good morning"
+    greeting = "good morning";
 }
 else if (currentTime < 18){
-    greeting = "good afternoon"
+    greeting = "good afternoon";
 }
 else 
 {
-    greeting = "good night"
+    greeting = "good night";
 }
 
 ReactDOM.render(
-    <h1 className="heading">{greeting}</h1>
+    // <h1 className="heading">{greeting}</h1>
+    <div>
+        <Heading />
+    </div>
 
 document.getElementByI("root"),
 )
