@@ -11,7 +11,7 @@ function isLeap(){
     }
 }
 
-studName = {Sara, Akash, Josy, Harry, Maya};
+studName = {Sara, Akash, Josy, Harry, Maya, Sage};
 for (var index = 0; index < studName.length; index++) {
     print(StudName);    
 }
