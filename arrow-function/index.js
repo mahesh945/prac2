@@ -30,3 +30,13 @@ const newNumber = numbers.find(function (num) {
 const newNumber = numbers.findIndex(function (num) {
   return num > 10;
 })
+if(currentTime < 12){
+  greeting = "good morning";
+}
+else if (currentTime < 18){
+  greeting = "good afternoon";
+}
+else 
+{
+  greeting = "good night";
+}

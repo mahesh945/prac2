@@ -14,3 +14,13 @@ for (var i = 0; i < num.length; i++) {
 
     
 }
+if(currentTime < 12){
+    greeting = "good morning";
+}
+else if (currentTime < 18){
+    greeting = "good afternoon";
+}
+else 
+{
+    greeting = "good night";
+}
