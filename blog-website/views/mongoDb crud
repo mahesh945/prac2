@@ -9,6 +9,16 @@ db.products.insertOne({
             rating : 4,
             review : "Keep it up!"
         },
+        {
+            authorName : "Ajinkya",
+            rating : 3,
+            review : "It,s alright"
+        },
+        {
+            authorName : "Kritika",
+            rating : 4,
+            review : "Good job!"
+        },
     ]
 
 })
