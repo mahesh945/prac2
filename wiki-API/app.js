@@ -19,12 +19,12 @@ const articleSchema = {
 const Article = mongoose.model("Article", articleSchema);
 
 app.get("/articles", function(req, res){
-    Article.find(err, foundArticles)
+    Article.find(err, foundArticles);
 })
 
 newArticle.save();
 
-.put(functin(req,res){
+app.put(functin(req,res){
     Article.update(
         {title : req.params.articleTitle},
         {title : req.body.title, content : req.body.content},
@@ -35,7 +35,7 @@ newArticle.save();
             }
         }
     );
-});
+})
 
 app.listen(3000, function() {
     console.log("hi"); 

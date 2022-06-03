@@ -10,18 +10,21 @@ function App() {
       <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
+        desc={contacts[0].desc}
         tel={contacts[0].phone}
         email={contacts[0].email}
       />
       <Card
         name={contacts[1].name}
         img={contacts[1].imgURL}
+        desc={contacts[1].desc}
         tel={contacts[1].phone}
         email={contacts[1].email}
       />
       <Card
         name={contacts[2].name}
         img={contacts[2].imgURL}
+        desc={contacts[2].desc}
         tel={contacts[2].phone}
         email={contacts[2].email}
       />

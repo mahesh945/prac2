@@ -14,8 +14,8 @@ function handleClick(){
         makeSound(event.key);
         buttonAnimate(event.key);
     })
-    // var audio = new Audio("sounds/tom-3.mp3");
-    // audio.play();
+    var audio = new Audio("sounds/tom-3.mp3");
+    audio.play();
 function makeSound(key) {
     switch (key) {
         case "w":

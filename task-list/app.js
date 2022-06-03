@@ -30,7 +30,11 @@ const item3 = new Item ({
    name : "desk"
 });
 
-const defaultItems = [item1, item2, item3];
+const item4 = new Item ({
+   name : "sofa"
+});
+
+const defaultItems = [item1, item2, item3, item4];
 
 Item.insertMany(defaultItem, function(err){
    if(err){
