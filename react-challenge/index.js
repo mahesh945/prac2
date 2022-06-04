@@ -7,7 +7,7 @@ const currentTime = date.getHours();
 let greeting;
 
 const customStyle = {
-    color : green
+    color : green,
 }
 
 if(currentTime < 12){
@@ -15,6 +15,9 @@ if(currentTime < 12){
 }
 else if (currentTime < 18){
     greeting = "good afternoon";
+}
+else if (currentTime < 20){
+    greeting = "good evening";
 }
 else 
 {
@@ -27,5 +30,5 @@ ReactDOM.render(
         <Heading />
     </div>
 
-document.getElementByI("root"),
+document.getElementById("root"),
 )

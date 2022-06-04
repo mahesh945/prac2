@@ -6,6 +6,9 @@ app.get("/", function(request, response){
 app.get("/contact", function(req, res){
     res.send("mp.mahesh2200@gmail.com");
 });
+app.get("/profiles", function(req, res){
+    res.send("mp.mahesh2200@gmail.com");
+});
 app.get("/about", function(req, res){
     res.send("You'll never know");
 });
