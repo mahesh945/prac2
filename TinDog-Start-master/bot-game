@@ -6,6 +6,10 @@ function getMilk(bottles, cost){
     alert("moveUp");
     alert("moveRight");
     alert("moveRight");
+    alert("moveLeft");
+    alert("moveUp");
+    alert("moveRight");
+    alert("moveRight");
     alert("Buy" + bottles + "bottles of milk");
     alert("It costs" + bottles*cost + "to buy" + bottles + "bottles of milk");
     alert("moveLeft");

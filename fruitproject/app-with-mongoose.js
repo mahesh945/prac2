@@ -37,13 +37,29 @@ const jackfruit = new Fruit({
 
 jackfruit.save();
 
-const person = new Person({
+const mango = new Fruit({
+    name : "Mango",
+    rating : 7,
+    review : "Juicy"
+});
+
+mango.save();
+
+const person1 = new Person({
     name : "Mahesh",
     age : 22,
     favFruit : pineapple
 });
 
-person.save();
+person1.save();
+
+const person2 = new Person({
+    name : "Akash",
+    age : 20,
+    favFruit : mango
+});
+
+person2.save();
 
 Person.deleteMany({name : "john"}, function(err){
     if(err){

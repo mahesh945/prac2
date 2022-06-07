@@ -12,6 +12,9 @@ app.get("/profiles", function(req, res){
 app.get("/about", function(req, res){
     res.send("You'll never know");
 });
+app.get("/secrets", function(req, res){
+    res.send("why would I say that?");
+});
 app.listen(3000, function(){
 
 });
