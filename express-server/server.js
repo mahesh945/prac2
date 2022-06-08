@@ -15,6 +15,10 @@ app.get("/about", function(req, res){
 app.get("/secrets", function(req, res){
     res.send("why would I say that?");
 });
+app.get("/hobbies", function(req, res){
+    res.send("Will be included soon. Keep checking...");
+});
+   
 app.listen(3000, function(){
 
 });

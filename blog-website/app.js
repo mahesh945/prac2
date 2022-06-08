@@ -59,7 +59,7 @@ post.save(function(err){
 
 });
 
-Post.findOne({_id: requestedPostId}, function(err, post){ }
+
 
 Post.findOne({_id: requestedPostId}, function(err, post){
 
@@ -80,7 +80,7 @@ app.get("/", function (req, res){
 });
 
 app.get("/posts/:postId", function(req, res){
-}
+});
 
 
 app.get("/about", function (req, res){
@@ -89,6 +89,10 @@ app.get("/about", function (req, res){
 
 app.get("/contact", function (req, res){
   res.render("contact", {startingContactContent:contactContent});
+});
+
+app.get("/hobbies", function (req, res){
+  res.render("hobbies", {startingHobbiesContent:hobbiesContent});
 });
 
 
