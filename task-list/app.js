@@ -64,9 +64,11 @@ res.render("list",
 {listTitle : "Today", newListItems : foundItems});
    });
 });
-  
+app.get("/", function(req, res){
    var today = new Date;
    var currentDay = today.getDay;
+});
+   
 
    switch (currentDay) {
       case 0:
