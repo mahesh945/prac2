@@ -16,6 +16,8 @@ const ItemsSchema = {
    name : String
 };
 
+
+
 const Item = mongoose.model("Item", ItemsSchema);
 
 const item1 = new Item ({
@@ -65,6 +67,33 @@ res.render("list",
   
    var today = new Date;
    var currentDay = today.getDay;
+
+   switch (currentDay) {
+      case 0:
+         day="sunday";
+         break;
+      case 1:
+         day="Monday";
+         break
+      case 2:
+         day="Tuesday";
+         break;
+      case 3:
+         day="Wednesday";
+         break;
+      case 4:
+         day="Thursday";
+         break;
+      case 5:
+         day="Friday";
+         break;
+      case 6:
+         day="Saturday";
+         break;
+   
+      default:
+         print("Error: Your current day is equal to " + currentDay);
+   }
 
     if(currentDay===6 || today.getDay===0){
        res.render("list", {kindOfDay: weekend});
