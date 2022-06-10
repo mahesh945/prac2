@@ -12,7 +12,7 @@ const newNumbers = numbers.map(function (x) {
 });
 
 ////Filter - Create a new array by keeping the items that return true.
-const newNumbers = numbers.filter(function(num) {
+const newNumbers1 = numbers.filter(function(num) {
   return num < 10;
 });
 
@@ -20,6 +20,8 @@ const newNumbers = numbers.filter(function(num) {
 var newNumber = numbers.reduce(function (accumulator, currentNumber) {
     return accumulator + currentNumber;
 })
+
+
 
 //Find - find the first item that matches from an array.
 const newNumber = numbers.find(function (num) {

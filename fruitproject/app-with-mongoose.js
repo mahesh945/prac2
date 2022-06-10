@@ -63,6 +63,10 @@ person2.save();
 
 Person.deleteMany({name : "john"}, function(err){
     if(err){
+        assert.equal(err, null);
+        assert.equal(result.result.n);
+        assert.equal(result.ops.length);
+       
         console.log(err);
     } else{
         console.log("successfuly deleted");
