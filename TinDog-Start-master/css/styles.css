@@ -50,6 +50,10 @@ h1,h2{
 
 .carousel-inner.carousel-item{
     font-size: medium;
+    color: aliceblue;
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 #pricing{
     color: grey;

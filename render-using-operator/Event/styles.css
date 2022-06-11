@@ -8,3 +8,10 @@ html {
     min-height: 1000px;
     font-family: 'helvetica neue';
 }
+p{
+  color: brown;
+  background-color: beige;
+  font-size: small;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

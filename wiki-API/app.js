@@ -24,7 +24,7 @@ app.get("/articles", function(req, res){
 
 newArticle.save();
 
-app.put(functin(req,res){
+app.put(function(req,res){
     Article.update(
         {title : req.params.articleTitle},
         {title : req.body.title, content : req.body.content},

@@ -11,5 +11,9 @@ function ToDoItem(props) {
     </div>
   );
 }
+function handleChange(event) {
+  const newValue = event.target.value;
+  setInputText(newValue);
+}
 
 export default ToDoItem;
