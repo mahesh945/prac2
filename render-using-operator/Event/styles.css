@@ -1,12 +1,15 @@
 body {
     text-align: center;
     background-color: #011F3F;
+    color: azure;
+
   }
 html {
     background-color: #E4E9FD;
     background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
     min-height: 1000px;
     font-family: 'helvetica neue';
+    text-align: center;
 }
 p{
   color: brown;
@@ -14,4 +17,5 @@ p{
   font-size: small;
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
 }
